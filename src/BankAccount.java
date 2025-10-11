@@ -11,10 +11,19 @@ public class BankAccount {
     public void addMoney(double money) {
         if (money >= 10_000) {
             System.out.println("Sorry, maximum is 14999 EUR to add");
+            return;
         }
-        else {
-            this.balance = this.balance + money;
+
+        if (money >= 5000) {
+            money = money * 0.99;
         }
+
+        System.out.println("Money transfer");
+        System.out.println("Old balance = " + balance);
+        System.out.println("Adding Money = " + money);
+
+        this.balance = this.balance + money;
+        System.out.println("New Balance = " + money);
     }
 
     public void withdrawMoney(double money) {
