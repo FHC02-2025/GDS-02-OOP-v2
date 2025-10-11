@@ -33,6 +33,20 @@ public class DemoApp {
 
         golf8.printFactSheet();
         porsche.printFactSheet();
+
+        porsche.accelerate(200);
+
+        porsche.printFactSheet();
+
+        porsche.accelerate2();
+        porsche.printFactSheet();
+
+        porsche.accelerate(67);
+        porsche.printFactSheet();
+
+        porsche.accelerate2();
+        porsche.printFactSheet();
+
     }
 
     public static void print(Car car) {

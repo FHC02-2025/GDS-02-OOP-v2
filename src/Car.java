@@ -20,6 +20,15 @@ public class Car {
         return speed;
     }
 
+
+    public void accelerate(int speed) {
+        this.speed = speed;
+    }
+
+    public void accelerate2(){
+        speed = speed + 10;
+    }
+
     public int getProductionYear() {
         return productionYear;
     }
