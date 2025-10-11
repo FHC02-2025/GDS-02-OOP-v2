@@ -9,7 +9,12 @@ public class BankAccount {
     }
 
     public void addMoney(double money) {
-        this.balance = this.balance + money;
+        if (money >= 10_000) {
+            System.out.println("Sorry, maximum is 14999 EUR to add");
+        }
+        else {
+            this.balance = this.balance + money;
+        }
     }
 
     public void withdrawMoney(double money) {
