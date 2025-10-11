@@ -3,6 +3,11 @@ public class BankAccount {
     private String accountOwner;
     private double balance;
 
+    public BankAccount(String accountOwner) {
+        this.accountOwner = accountOwner;
+        balance = 100;
+    }
+
     public void setAccountOwner(String accountOwner) {
         this.accountOwner = accountOwner;
         balance = 0;
