@@ -25,6 +25,10 @@ public class Fraction {
         return newFraction;
     }
 
+    public Fraction multiplicate(Fraction f2, Fraction f3) {
+        return this.multiplicate(f2).multiplicate(f3);
+    }
+
     public int getNominator() {
         return nominator;
     }
