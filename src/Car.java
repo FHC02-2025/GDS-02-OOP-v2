@@ -8,7 +8,7 @@ public class Car {
     public boolean isSeatHeatingOn;
     public String carType; // Tippfehler, wir bräuchten was bessers, jeder kann alles Reinschreiben
 
-
+    // methode
     public void printFactSheet (){
         System.out.println("identificationNumber = " + identificationNumber);
         System.out.println("colour = " + colour);
