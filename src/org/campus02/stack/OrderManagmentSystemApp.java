@@ -18,6 +18,10 @@ public class OrderManagmentSystemApp {
         System.out.println("cards.unstack() = " + cards.unstack());
 
 
+        StringStack stringStack = new StringStack(new String[5]);
+        stringStack.stack("Waschmaschine 1");
+        stringStack.stack("Waschmaschine 2");
+        System.out.println("stringStack.unstack() = " + stringStack.unstack());
 
 
     }
