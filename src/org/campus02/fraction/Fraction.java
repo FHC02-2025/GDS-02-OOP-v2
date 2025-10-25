@@ -1,3 +1,5 @@
+package org.campus02.fraction;
+
 public class Fraction {
 
     private int nominator; // Zähler

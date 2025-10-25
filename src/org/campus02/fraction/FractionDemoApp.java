@@ -1,3 +1,5 @@
+package org.campus02.fraction;
+
 public class FractionDemoApp {
 
     public static void main(String[] args) {

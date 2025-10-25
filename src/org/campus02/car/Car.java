@@ -1,3 +1,5 @@
+package org.campus02.car;
+
 public class Car {
     // body
     private String identificationNumber;

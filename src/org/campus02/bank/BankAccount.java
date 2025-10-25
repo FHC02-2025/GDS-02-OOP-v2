@@ -1,11 +1,29 @@
+package org.campus02.bank;
+
 public class BankAccount {
 
     private String accountOwner;
-    private double balance;
+    private double balance ;
+    private static int COUNTER_ACCOUNTS = 104812; // kann auch private sein
+    private final int myID; // write once, read often / readonly
 
     public BankAccount(String accountOwner) {
         this.accountOwner = accountOwner;
         balance = 100;
+        COUNTER_ACCOUNTS++;
+        myID = COUNTER_ACCOUNTS;
+    }
+
+    public static int getCounterAccounts() {
+        // Aus statischen Methoden kann NUR auf
+        // - statische Attribute
+        // - andere statische Methoden zugegriffen werden
+        return COUNTER_ACCOUNTS;
+    }
+
+    public int getCounterAccountsObject() {
+        setAccountOwner("maxi");
+        return COUNTER_ACCOUNTS;
     }
 
     public void setAccountOwner(String accountOwner) {
@@ -41,6 +59,7 @@ public class BankAccount {
     }
 
     public void print(){
+        System.out.println("myID = " + myID);
         System.out.println("accountOwner = " + accountOwner);
         System.out.println("balance = " + balance);
         System.out.println("----------");

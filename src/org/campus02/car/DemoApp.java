@@ -1,3 +1,5 @@
+package org.campus02.car;
+
 public class DemoApp {
 
     public static void main(String[] args) {
