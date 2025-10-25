@@ -4,11 +4,17 @@ public class Fraction {
 
     private int nominator; // Zähler
     private int denominator;  // Nenner
+    private static int COUNTER = 0;
 
     // ALT + Einfügen
     public Fraction(int nominator, int denominator) {
         this.nominator = nominator;
         this.denominator = denominator;
+        COUNTER++;
+    }
+
+    public static int getCOUNTER() {
+        return COUNTER;
     }
 
     public void print() {
@@ -28,7 +34,10 @@ public class Fraction {
     }
 
     public Fraction multiplicate(Fraction f2, Fraction f3) {
-        return this.multiplicate(f2).multiplicate(f3);
+        Fraction fx = this.multiplicate(f2);
+        Fraction erg = fx.multiplicate(f3);
+        // return this.multiplicate(f2).multiplicate(f3);
+        return erg;
     }
 
     public int getNominator() {

@@ -13,6 +13,8 @@ public class FractionDemoApp {
 
         Fraction result = f1.multiplicate(f2);
         result.print();
+
+        System.out.println("Fraction.getCOUNTER() = " + Fraction.getCOUNTER());
         
     }
 }
